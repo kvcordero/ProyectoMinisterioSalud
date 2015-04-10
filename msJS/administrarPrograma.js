@@ -1,7 +1,33 @@
 //------------------------------------------------------------------------------------------------
-//                          Metodo que inserta un usuario
+//                          Metodo que inserta una empresa
 //------------------------------------------------------------------------------------------------
 function crearPrograma() {
+
+    var fechaInscripcion = $('#txtFechaInscripcion').val();
+    var idEmpresa = $("#hdfIdEmpresa").val();
+    
+
+    alert(identificacion);
+
+    var parametros = {
+        "fechaInscripcion": fechaInscripcion,
+        "idEmpresa": idEmpresa
+    };
+    $.ajax({
+        data: parametros,
+        url: '../sbcReglasNegocio/',
+        type: 'post',
+        success: function (response) {
+            $("#mensaje").html(response);
+            //limpiarCamposAdministrarCuentasAhorros();
+        }
+    });
+}
+
+//------------------------------------------------------------------------------------------------
+//                          Metodo que actualiza una empresa
+//------------------------------------------------------------------------------------------------
+function actulizarPrograma() {
 
     var fechaInscripcion = $('#txtFechaInscripcion').val();
     var idEmpresa = $("#hdfIdEmpresa").val();
