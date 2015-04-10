@@ -1,0 +1,426 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/03/2015, 03:07:35 PM
+    Author     : Kevin
+*/
+
+body{
+    background: #C7CDD4;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('./font/RobotoCondensed-Regular.ttf');
+}
+
+a{
+    cursor: pointer;
+}
+
+/* -------------------------------- TopBar Style ------------------------------------------------------------*/
+
+.top{
+    background-color: #5190C5;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 85%;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+}
+
+#banner{
+    width: 100%;
+}
+
+.navigation{
+    padding: 0%;
+}
+
+.navigation ul{
+   list-style-type: none;
+   text-align: inherit;
+   background-color: #5190C5;
+   width: 82.2%;
+   margin-top: 0%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+} 
+
+.navigation li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;  
+} 
+
+.navigation li a {
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.6);
+   font-family: 'Roboto Condensed';
+   font-weight: 300;
+   height: 55px;
+   line-height: 55px;
+   padding-bottom: 1.6%;
+   padding-top: 1.62%;
+   padding-left: 2%;
+   padding-right: 2%;
+} 
+
+.navigation li a:hover {
+   text-shadow: none;
+   color: #FFF;
+   background: none repeat scroll 0% 0% #F47319;
+} 
+
+/* -------------------------------- Sidebar Style ------------------------------------------------------------*/
+.sideBar{
+    padding-top: 1%;
+    background-color: #FFF;
+    width: 15%;
+    margin-left: 7.5%;
+    float: left;
+}
+
+.topSideBar{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    color: #54AACB;
+    margin: 0px 0px 15px;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    color: #54AACB;
+    text-transform: uppercase;
+}
+
+.sideBar ul{
+    list-style: outside none none;
+    padding-left: 0%;
+    padding-bottom: 5%;
+}
+
+.sideBar li{
+    line-height: 20px;
+}
+
+.sideBar li span{
+    padding-left: 0%;
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: #515456;
+    outline: medium none;
+    font-family: 'Roboto Condensed';
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.sideBar li span:hover{
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.03);
+    color: #515456;
+    outline: medium none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+}
+
+/* -------------------------------- Content Style ------------------------------------------------------------*/
+
+.content{
+    background-color: #FFF;
+    float: left; 
+    margin-left: 2%;
+    width: 68%;
+    margin-bottom: 2%;
+}
+
+.titleSection{
+    text-align: center;
+    font-family: 'Roboto Condensed';   
+    color: #515456;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #7092FF;
+}
+
+.textSection{
+    text-align: justify;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-family: 'Roboto Condensed';
+    color: #515456;
+}
+
+/* -------------------------------- Footer Style ------------------------------------------------------------*/
+
+.footer{
+    background-color: #FFF;
+    width: 85%;
+    clear: both;
+    margin-top: 18%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topFooter{
+    padding-top: 0.5%;
+}
+
+.topFooter li {
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+   
+}
+
+.topFooter li a {
+    color: #B1CCE7;
+    text-decoration: none;
+}
+
+.topFooter li a:hover{
+    color: #2B728E;
+    text-decoration: underline;
+}
+
+.bottomFooter{
+    position: relative; 
+    margin: 0 auto 0 auto; 
+    text-align: center; 
+    border: 1px solid #CEE3F6; 
+    box-shadow: 10px 10px 5px #888888;
+}
+
+/* -------------------------------- Forms Style ------------------------------------------------------------*/
+
+.form{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.form .element-select span{
+    padding-top: 0%;
+    margin-left: 0%;
+}
+
+.formoid-solid-blue{
+    background-color:#FFFFFF;
+    font-size:14px;
+    font-family:'Roboto',Arial,Helvetica,sans-serif;
+    color:#34495E;
+    max-width:560px;
+    min-width:150px
+}
+
+/********* estilo para pagina crear compañia ***********/
+
+#companyForm {
+    max-width:760px;
+}
+
+#companyForm .element-input {
+    width: 43%;
+    float: left;
+}
+
+#companyForm .element-date {
+    width: 43%;
+    float: left;
+}
+
+#companyForm .submit {
+    clear: both;
+}
+
+
+/********* estilo para actualizar empresa ****************/
+
+.autocomplete{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.autocomplete ul{
+    padding: 0;
+    clear: both;
+    margin-top: 0px;
+}
+
+.autocomplete ul li{
+    list-style: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BDC3C7;
+    transition: border-color 0.5s ease-in-out 0s;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 60%;
+    cursor: pointer;
+}
+
+.autocomplete ul li:hover{
+    background-color:  #d9edf7;
+}
+
+#companyForm .autocomplete .element-input {
+    padding-top: 1%;
+    padding-bottom: 0%;
+    width: 100%;
+}
+
+#companyForm .autocomplete .element-separator {
+    padding-top: 1%;
+}
+
+.autocomplete #txtAutoCompletarAct,
+#txtAutoCompletarBus, #txtAutoCompletarElm{
+    width: 60%;
+    float: left;
+    margin-right: 5%;
+}
+
+.auto{
+    padding-bottom: 0px;
+}
+/********* estilo para pagina actualizar usuario ***********/
+
+#txtAutoCompletarAct,#txtAutoCompletarBus{
+    width: 60%;
+    float: left;
+    margin-right: 5%;
+    height: 50px;
+}
+
+.element-separator{
+    padding-bottom: 20px;
+    clear: both;
+}
+
+#btnAutoComplete{
+   padding: 11px 13px;
+}
+
+/********* estilo para pagina ver usuario ***********/
+
+#buscarForm{
+    max-width: 90%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.65);
+}
+
+.tableContent h2{
+    background-color: #3498DB;
+    border-top: 1px solid #70B6E5;
+    border-bottom: 5px solid #2372A7;
+    height: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;  
+    padding-left: 5%;
+    font-family: 'Roboto Condensed';
+    color: #FFF;
+}
+
+#tableTitle{
+    padding-top: 5px;
+    padding-bottom: 0px;  
+    margin-bottom: 20px;
+}
+
+#buscarDiv{
+    padding-bottom: 0%;
+}
+
+.form span{
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+
+.form .result{
+    margin-left: 5%;
+}
+
+/********* estilo para registrar programa ***********/
+
+.firstSelect{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.secondSelect{
+    clear: both;
+}
+
+#buscarDiv .element-date{
+    width: 30%;
+}
+
+.titleSelect{
+    float: left;
+}
+
+#tipoTratamiento {
+    margin-top: 6%;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    float: left;
+    width: 30%;
+}
+
+#seleccionGestor{
+    margin-top: 6%;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    float: left;
+    width: 80%;
+}
+
+#cateogriaResiduo {
+    padding-top: 50px;
+    margin-top: 6%;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    max-width: 100%;    
+}
+
+#tipoResiduo {
+    margin-top: 6%;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+#cateogriaResiduo .column  label{
+    display: inline;
+    margin-right: 10%
+}
+
+#cateogriaResiduo .column {
+    width: 90%;
+    margin-left: 8%;
+}
+
+#tipoResiduo .column {
+    width: 100%;
+    margin-left: 40%;
+}
+
+#buttonRegister {
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    max-width: 100%;
+}
