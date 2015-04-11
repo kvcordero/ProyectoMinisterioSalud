@@ -41,7 +41,7 @@ function actulizarPrograma() {
     };
     $.ajax({
         data: parametros,
-        url: '../sbcReglasNegocio/',
+        url: '.../msReglasNegocioAccion/ProgramaReglasNegocioAccion.php',
         type: 'post',
         success: function (response) {
             $("#mensaje").html(response);
